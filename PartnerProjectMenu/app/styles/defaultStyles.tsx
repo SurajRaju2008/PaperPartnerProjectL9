@@ -10,19 +10,19 @@ const defaultStyles = StyleSheet.create({
 
     text: {
         fontSize: 16,
-        color: colors.text.light,
+        color: colors.text,
         fontWeight: 'bold'
     },
 
     subHeader: {
         fontSize: 24,
-        color: colors.text.dark,
+        color: colors.dark,
     },
 
     titleText: {
         fontSize: 36,
         fontWeight: 'bold',
-        color: colors.text.dark,
+        color: colors.dark,
     },
 
     card: {
