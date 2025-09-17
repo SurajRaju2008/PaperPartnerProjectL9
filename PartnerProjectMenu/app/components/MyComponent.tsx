@@ -14,17 +14,19 @@ const MyComponent = () => {
       <View
         style={{
           paddingTop: 50,
-          flexDirection: 'row',
+          flexDirection: 'column',
           justifyContent: 'center',
+          backgroundColor: 'blue',
         }}>
         <Menu
           visible={visible}
           onDismiss={closeMenu}
           anchor={<Button onPress={openMenu}>Show menu</Button>}>
-          <Menu.Item onPress={() => {}} title="Item 1" />
-          <Menu.Item onPress={() => {}} title="Item 2" />
-          <Divider />
-          <Menu.Item onPress={() => {}} title="Item 3" />
+          <Menu.Item onPress={() => {}} title="Delivery" />
+          <Divider/>
+          <Menu.Item onPress={() => {}} title="Pick-up" />
+          <Divider/>
+          <Menu.Item onPress={() => {}} title="Add to Menu" />
         </Menu>
       </View>
     </PaperProvider>
