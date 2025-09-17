@@ -2,7 +2,6 @@ import * as React from 'react';
 import { View } from 'react-native';
 import { Button, Divider, Menu, PaperProvider } from 'react-native-paper';
 import { Icon } from 'react-native-screens';
-import Options from './Options';
 
 type propsType = {
     title: string;
@@ -10,7 +9,7 @@ type propsType = {
 }
 
 
-const MyComponent = () => {
+const Options = () => {
   const [visible, setVisible] = React.useState(false);
 
   const openMenu = () => setVisible(true);
@@ -23,19 +22,17 @@ const MyComponent = () => {
         <Menu
           visible={visible}
           onDismiss={closeMenu}
-          anchor={<Button onPress={openMenu}>Show menu</Button>}>
-          <Menu.Item onPress={() => {}} title="Fried Chicken" />
-            <Options/>
+          anchor={<Button onPress={openMenu}>Show menu</Button>}
+          anchorPosition='top'>
+          <Menu.Item onPress={() => {}} title="Order" />
           <Divider/>
-          <Menu.Item onPress={() => {}} title="Fries" />
-            <Options/>
+          <Menu.Item onPress={() => {}} title="Delivery" />
           <Divider/>
-          <Menu.Item onPress={() => {}} title="Lemonade" />
-            <Options/>
+          <Menu.Item onPress={() => {}} title="Pick-up" />
         </Menu>
       </View>
     </PaperProvider>
   );
 };
 
-export default MyComponent;
+export default Options;

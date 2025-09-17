@@ -16,13 +16,13 @@ const defaultStyles = StyleSheet.create({
 
     subHeader: {
         fontSize: 24,
-        color: colors.dark,
+        color: colors.text,
     },
 
     titleText: {
         fontSize: 36,
         fontWeight: 'bold',
-        color: colors.dark,
+        color: colors.text,
     },
 
     button: {
@@ -32,11 +32,6 @@ const defaultStyles = StyleSheet.create({
         backgroundColor: colors.secondary,
         justifyContent: 'center',
         alignItems: 'center',
-        shadowColor: '#000',
-        shadowOffset: { width: 0, height: 2 },
-        shadowOpacity: 0.15,
-        shadowRadius: 3.84,
-        elevation: 5,
   }
 })
 
