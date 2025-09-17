@@ -25,15 +25,19 @@ const defaultStyles = StyleSheet.create({
         color: colors.dark,
     },
 
-    card: {
-        backgroundColor: colors.primary,
-        borderRadius: 10,
+    button: {
+        width: 60,
+        height: 60,
+        borderRadius: 30,
+        backgroundColor: colors.secondary,
+        justifyContent: 'center',
+        alignItems: 'center',
         shadowColor: '#000',
         shadowOffset: { width: 0, height: 2 },
         shadowOpacity: 0.15,
         shadowRadius: 3.84,
         elevation: 5,
-  },
+  }
 })
 
 export default defaultStyles;
