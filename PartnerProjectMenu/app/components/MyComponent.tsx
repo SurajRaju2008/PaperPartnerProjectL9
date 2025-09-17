@@ -18,22 +18,17 @@ const MyComponent = () => {
 
   return (
     <PaperProvider>
-      <View
-        style={{
-          paddingTop: 50,
-          flexDirection: 'column',
-          justifyContent: 'center',
-          backgroundColor: 'blue',
-        }}>
+      <View>
         <Menu
           visible={visible}
           onDismiss={closeMenu}
-          anchor={<Button onPress={openMenu}>Show menu</Button>}>
-          <Menu.Item onPress={() => {}} title="Delivery" />
+          anchor={<Button onPress={openMenu}>Show menu</Button>}
+          anchorPosition={'bottom'}>
+          <Menu.Item onPress={() => {}} title="Fried Chicken" />
           <Divider/>
-          <Menu.Item onPress={() => {}} title="Pick-up" />
+          <Menu.Item onPress={() => {}} title="Fries" />
           <Divider/>
-          <Menu.Item onPress={() => {}} title="Add to Menu" />
+          <Menu.Item onPress={() => {}} title="Lemonade" />
         </Menu>
       </View>
     </PaperProvider>
