@@ -1,6 +1,13 @@
 import * as React from 'react';
 import { View } from 'react-native';
 import { Button, Divider, Menu, PaperProvider } from 'react-native-paper';
+import { Icon } from 'react-native-screens';
+
+type propsType = {
+    title: string;
+    icon?: Icon;
+}
+
 
 const MyComponent = () => {
   const [visible, setVisible] = React.useState(false);
