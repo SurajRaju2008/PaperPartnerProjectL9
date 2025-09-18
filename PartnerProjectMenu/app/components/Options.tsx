@@ -28,7 +28,7 @@ const Options = () => {
           }}
           visible={visible}
           onDismiss={closeMenu}
-          anchor={<Button onPress={openMenu}>Show menu</Button>}
+          anchor={<Button onPress={openMenu}>Show options</Button>}
           anchorPosition='top'>
           <Menu.Item onPress={() => {}} title="Order" />
           <Divider/>
