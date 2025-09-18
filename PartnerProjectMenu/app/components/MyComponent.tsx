@@ -25,13 +25,13 @@ const MyComponent = () => {
           visible={visible}
           onDismiss={closeMenu}
           anchor={<Button onPress={openMenu}>Show menu</Button>}>
-          <Menu.Item onPress={() => {}} title="Fried Chicken" />
+          <Menu.Item leadingIcon ="food-drumstick" onPress={() => {}} title="Fried Chicken" />
             <Options/>
           <Divider/>
-          <Menu.Item onPress={() => {}} title="Fries" />
+          <Menu.Item leadingIcon ="french-fries" onPress={() => {}} title="Fries" />
             <Options/>
           <Divider/>
-          <Menu.Item onPress={() => {}} title="Lemonade" />
+          <Menu.Item leadingIcon ="food-fork-drink" onPress={() => {}} title="Lemonade" />
             <Options/>
         </Menu>
       </View>
