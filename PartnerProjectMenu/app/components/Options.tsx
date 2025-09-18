@@ -24,7 +24,7 @@ const Options = () => {
             position: 'absolute',  
             zIndex: 2,             
             top: -25,             
-            left: 150,          
+            left: -150,          
           }}
           visible={visible}
           onDismiss={closeMenu}
