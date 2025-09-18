@@ -7,7 +7,9 @@ export default function Index() {
     <View
       style={defaultStyles.container}
     >
-      <MyComponent style= {defaultStyles.button}/>
+      <View style={defaultStyles.buttonHolder}>
+        <MyComponent />
+      </View>
     </View>
   );
 }

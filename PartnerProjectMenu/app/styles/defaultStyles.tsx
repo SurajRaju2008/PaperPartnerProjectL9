@@ -5,6 +5,7 @@ const defaultStyles = StyleSheet.create({
     container: {
         flex: 1,
         padding: 16,
+        alignItems: 'center',
         backgroundColor: colors.background
     },
 
@@ -24,20 +25,17 @@ const defaultStyles = StyleSheet.create({
         fontWeight: 'bold',
         color: colors.text,
     },
-
-    button: {
-        width: 60,
-        height: 60,
-        borderRadius: 30,
-        backgroundColor: colors.accent,
-        justifyContent: 'center',
-        alignItems: 'center',
-        shadowColor: '#000',
-        shadowOffset: { width: 0, height: 2 },
-        shadowOpacity: 0.15,
-        shadowRadius: 3.84,
-        elevation: 5,
-  }
+    buttonHolder: {
+        textAlign: 'center',
+        backgroundColor: colors.secondary,
+        height: '60%',
+        width: '60%',
+        borderColor: colors.border,
+        borderWidth:20,
+        boxShadow: '0 10px 20px rgba(0, 0, 0, 0.1)',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+    }
 })
 
 export default defaultStyles;
