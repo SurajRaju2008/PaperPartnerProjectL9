@@ -7,6 +7,7 @@ import Options from './Options';
 type propsType = {
     title: string;
     icon?: Icon;
+    style: string;
 }
 
 

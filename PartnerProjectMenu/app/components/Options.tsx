@@ -19,7 +19,13 @@ const Options = () => {
   return (
     <PaperProvider>
       <View>
-        <Menu
+        <Menu 
+        style={{
+            position: 'absolute',  
+            zIndex: 2,             
+            top: -25,             
+            left: 150,          
+          }}
           visible={visible}
           onDismiss={closeMenu}
           anchor={<Button onPress={openMenu}>Show menu</Button>}
